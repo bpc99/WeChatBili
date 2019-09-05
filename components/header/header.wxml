@@ -1,0 +1,17 @@
+<view class="header_title">
+  <!-- logo -->
+  <navigator class="header_logo">
+    <image src="../../assets/images/logo.svg"></image>
+  </navigator>
+  <!-- 搜索 -->
+  <navigator class="header_search">
+    <text class="fa fa-search header_search_icon" aria-hidden="true"></text>
+    <text class="header_search_content">我不要你觉得，我要我觉得</text>
+  </navigator>
+  <!-- 用户 -->
+  <navigator class="header_user">
+    <image src="../../assets/images/preview.jpg"></image>
+  </navigator>
+  <!-- 下载 -->
+  <navigator class="header_download">下载 App</navigator>
+</view>

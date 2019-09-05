@@ -1,0 +1,104 @@
+<view class="main">
+  <view class="video_info_box">
+    <view class="video_box">
+      <video src="{{videoInfo.videoSrc}}"></video>
+    </view>
+    <!-- 视频Tab -->
+    <view class="video_tab">
+      <view class="video_tab_item active">简介</view>
+      <view class="video_tab_item">评论</view>
+      <view class="video_tab_Barrage">弹幕</view>
+    </view>
+    <view class="video_info">
+      <view class="xxx">
+        <!-- 用户信息 -->
+        <view class="video_author">
+          <image src="../../assets/images/preview.jpg" mode="scaleToFill"></image>
+          <view class="edit">
+            <view class="edit_userName">牛叔万岁万岁万万岁</view>
+            <view class="edit_userfollow">82.5万粉丝</view>
+          </view>
+          <navigator><text class="fa fa-plus" aria-hidden="true"></text>关注</navigator>
+        </view>
+        <!-- 视频标题 -->
+        <view class="video_flex">
+          <navigator class="video_popular video_popular_icon"><image src="../../assets/images/popular.svg" mode="widthFix"></image>热门</navigator>
+          <view class="video_title">{{videoInfo.videoTitle}}skcbckbjlcndjcnsdbcshjdvbsjhdvb</view>
+          <view class="video_icon"><text class="fa fa-angle-down"></text></view>
+        </view>
+        <!-- 视频信息 -->
+        <view class="video_detail">
+          <view class="video_detail_icon">
+            <text class="fa fa-file-video-o" aria-hidden="true"></text>{{videoInfo.playCount}}万
+          </view>
+          <view class="video_detail_icon">
+            <text class="fa fa-list-alt" aria-hidden="true"></text>{{videoInfo.commentCount}}
+          </view>
+          <view class="video_detail_icon">
+            {{videoInfo.data}}
+          </view>
+          <view class="video_detail_icon">
+            {{videoInfo.data}}
+          </view>
+        </view>
+        <!-- 视频操作 -->
+        <view class="video_operation">
+          <view class="video_operationIcon">
+            <text class="fa fa-thumbs-up" aria-hidden="true"></text>
+            <text class="play_count">2</text>
+          </view>
+          <view class="video_operationIcon">
+            <text class="fa fa-thumbs-down" aria-hidden="true"></text>
+            <text class="play_count">不喜欢</text>
+          </view>
+          <view class="video_operationIcon">
+            <text class="fa fa-check-circle-o" aria-hidden="true"></text>
+            <text class="play_count">333</text>
+          </view>
+          <view class="video_operationIcon">
+            <text class="fa fa-star" aria-hidden="true"></text>
+            <text class="play_count">555</text>
+          </view>
+          <view class="video_operationIcon">
+            <text class="fa fa-share" aria-hidden="true"></text>
+            <text class="play_count">56</text>
+          </view>
+        </view>
+        <!-- 视频Tab -->
+        <view class="video_tags">
+          <text class="video_tags_item">影评</text>
+          <text class="video_tags_item">爱情</text>
+          <text class="video_tags_item">吐槽</text>
+          <text class="video_tags_item">单身狗</text>
+        </view>
+        <!-- 推荐视频 -->
+        <view class="video_list">
+          <view class="video_list_item">
+            <image src="http://img5.imgtn.bdimg.com/it/u=4262412355,1991886674&fm=26&gp=0.jpg"/>
+            <view class="video_list_count">
+              <text class="video_list_Title">好配置就这么简单，京东笔记本!</text>
+              <view class="video_list_footer">
+                <text class="stick gray">广告</text>
+                <text class="video_list_content">京东</text>
+              </view>
+            </view>
+          </view>
+          <view class="video_list_item" wx:for="{{videoList}}" wx:key="{{index}}">
+            <image src="http://img5.imgtn.bdimg.com/it/u=4262412355,1991886674&fm=26&gp=0.jpg"/>
+            <view class="video_list_count">
+              <text class="video_list_Title">午夜风高垂杨柳，中天明月照青松</text>
+              <view class="video_list_footer">
+                <text class="stick gray">UP</text>
+                <text class="video_list_content">一位不愿意透露姓名的郭德纲师傅</text>
+              </view>
+              <view class="video_list_footer">
+                <text class="fa fa-file-video-o" aria-hidden="true"></text>123
+                <text class="fa fa-file-video-o" aria-hidden="true" style="margin-left: 20rpx;"></text>234
+              </view>
+            </view>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

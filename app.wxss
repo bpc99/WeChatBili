@@ -1,0 +1,22 @@
+/**app.wxss**/
+page,view,image,swiper,swiper-item,navigator,video{
+  box-sizing: border-box;
+}
+page {
+    --padding: 0 10rpx;
+}
+
+.stick{
+	font-size: 15rpx;
+	height: 25rpx;
+	line-height: 25rpx;
+	border: 1rpx solid #ff81aa;
+	padding: 0 5rpx;
+    display: inline-block;
+    text-align: center;
+    color: #ff81aa;
+    border-radius: 5rpx;
+    margin-right: 10rpx;
+    vertical-align: middle;
+    font-weight: 400;
+}

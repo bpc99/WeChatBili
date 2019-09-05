@@ -1,0 +1,91 @@
+@import '../../assets/fontAwesome/fontAwesome.wxss';
+page{
+  color: #666;
+}
+
+/* Tab样式 */
+.nav_wrap{
+  position: fixed;
+  top: 100rpx;
+  left: 0;
+  height: 90rpx;
+  z-index: 5;
+  background-color: #fff;
+}
+.nav{
+  white-space: nowrap;
+  padding: 5rpx 0;
+}
+.nav_item{
+  padding: 20rpx 45rpx;
+  font-size: 30rpx;
+  display: inline-block;
+}
+.nav_item.active{
+  border-bottom: 5rpx solid #de688b;
+}
+
+/* 轮播图 */
+.slides{
+  position: relative;
+  top: 200rpx;
+  left: 0;
+  padding: var(--padding);
+  width: 100%;
+}
+.slides > swiper{
+  height: 220rpx;
+}
+.slides > swiper navigator{
+  width: 100%;
+  height: 100%;
+}
+.slides > swiper navigator > image{
+  width: 100%;
+  height: 100%;
+  border-radius: 15rpx;
+}
+
+/* 视频列表 */
+.video_wrap{
+  position: relative;
+  top: 220rpx;
+  left: 0;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  padding: var(--padding);
+  justify-content: space-between;
+}
+.video_item{
+  width: 48%;
+  margin-bottom: 20rpx;
+}
+.video_img{
+  position: relative;
+}
+.video_img image{
+  width: 100%;
+  border-radius: 15rpx;
+}
+.video_img .video_info{
+  position: absolute;
+  bottom: 10rpx;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  color: #fff;
+  font-size: 24rpx;
+}
+.video_title{
+  font-size: 28rpx;
+
+  text-overflow: -o-ellipsis-lastline;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
